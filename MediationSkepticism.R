@@ -31,8 +31,8 @@ for(i in 1:cases) {
 	# Calculations: mediation model for latent variables:
 	# la <- d_a*rnorm(sampleSize) # Remove for reverse mediation
 	# lb <- ab*la + d_b*rnorm(sampleSize) Remove for reverse mediation
-	lb <- d_b*rnorm(sampleSize)
-	la <- ba*lb + d_a*rnorm(sampleSize)
+	lb <- d_b*rnorm(sampleSize)	# Remove for standard mediation
+	la <- ba*lb + d_a*rnorm(sampleSize)	# Remove for standard mediation
 	lc <- ac*la + d_c*rnorm(sampleSize)
 	
 	# Calculations: model for measured variables:		
