@@ -1,7 +1,7 @@
 # Mediation Skepticism - Monte Carlo Simulation
 # Michael P. McDonald 	2015-03-01
 # Extended from Tony Greenwald's "Mediation Skepticism" spreadsheet
-
+install.packages("dplyr")
 library(dplyr)
 
 sampleSize <- 100
