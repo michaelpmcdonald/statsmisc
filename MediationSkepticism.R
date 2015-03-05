@@ -2,6 +2,8 @@
 # Michael P. McDonald 	2015-03-01
 # Extended from Tony Greenwald's "Mediation Skepticism" spreadsheet
 
+library(dplyr)
+
 sampleSize <- 100
 cases <- 1000
 
@@ -30,7 +32,7 @@ measuredResults <- matrix(nrow=cases, ncol=4)
 for(i in 1:cases) {
 	# Calculations: mediation model for latent variables:
 	# la <- d_a*rnorm(sampleSize) # Remove for reverse mediation
-	# lb <- ab*la + d_b*rnorm(sampleSize) Remove for reverse mediation
+	# lb <- ab*la + d_b*rnorm(sampleSize) #Remove for reverse mediation
 	lb <- d_b*rnorm(sampleSize)	# Remove for standard mediation
 	la <- ba*lb + d_a*rnorm(sampleSize)	# Remove for standard mediation
 	lc <- ac*la + d_c*rnorm(sampleSize)
